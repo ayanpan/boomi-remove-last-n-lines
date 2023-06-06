@@ -6,7 +6,7 @@ import com.boomi.execution.ExecutionUtil
 // Get input data stream
 for( int i = 0; i < dataContext.getDataCount(); i++ ) {
     InputStream is = dataContext.getStream(i);
-	Properties props = dataContext.getProperties(i);
+    Properties props = dataContext.getProperties(i);
     
     // Copy the input stream data as a String
     String data = dataContext.getStream(i).text;
