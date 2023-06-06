@@ -15,7 +15,7 @@ for( int i = 0; i < dataContext.getDataCount(); i++ ) {
     lines = data.split('\n')
     
     // Remove the last 6 lines and join the data with new lines
-    newContent = lines.take(lines.size() - 7).join('\n')
+    newContent = lines.take(lines.size() - 6).join('\n')
     
     // Convert the manipulated data back to input stream
     is = new ByteArrayInputStream(newContent.getBytes());
